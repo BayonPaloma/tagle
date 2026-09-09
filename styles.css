@@ -123,8 +123,73 @@ a {
 }
 
 .especialidades h2 span {
-  color: #368e92;
+  color: #6aa495;
 }
+
+.grupos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 32px 0px;
+}
+
+.subtitulo {
+  padding-left: 40px;
+}
+
+.especialidades h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #052618;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  border-left: 3px solid #2d6d5c;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  aspect-ratio: 1 / 1;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.tarjeta-contenido {
+  height: 40%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.tarjeta-contenido h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tarjeta-contenido p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/*
 .contenedor-tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -160,7 +225,7 @@ a {
 .tarjeta-contenido p {
   margin: 0;
   line-height: 1.6;
-}
+}*/
 /*
 
 
