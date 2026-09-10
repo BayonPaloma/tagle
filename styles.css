@@ -242,7 +242,8 @@ a {
   gap: 8px;
 }
 
-.icnonos-etapa img {
+.icnonos-etapa img,
+.info-extra img {
   max-height: 100px;
   object-fit: cover;
 }
@@ -266,6 +267,36 @@ a {
   border-radius: 20px;
   white-space: nowrap;
   font-size: 12px;
+}
+
+.info-extra {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.continfo {
+  display: flex;
+  gap: 20px;
+}
+
+.textoinfo {
+  max-width: 380px;
+}
+
+.textoinfo p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.textoinfo h4 {
+  font-size: 22px;
+  margin: 0 0 5px;
 }
 
 .contacto {
