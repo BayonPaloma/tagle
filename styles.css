@@ -37,6 +37,12 @@ body {
   width: 100%;
 }
 
+h2 {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -116,13 +122,6 @@ a {
 }
 
 .especialidades h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  color: rgb(20, 20, 20);
-}
-
-.especialidades h2 span {
   color: #6aa495;
 }
 
@@ -345,8 +344,6 @@ a {
 .ubicacion h2 {
   text-align: center;
   color: var(--azul);
-  font-size: 2rem;
-  font-weight: 600;
   margin: 30px 0px 10px 0px;
 }
 
