@@ -318,18 +318,36 @@ a {
   margin: 0 0 5px;
 }
 
-.contacto {
+.insta {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contacto .texto {
-  padding-bottom: 20px;
+.insta h2 {
+  margin-bottom: 0px;
+  color: #234425;
 }
 
-.contacto h2 {
-  color: #1f5561;
+.insta p {
+  max-width: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.publicaciones {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.instagram-media {
+  overflow: hidden !important;
+  border-radius: 12px !important;
 }
 
 .ubicacion {
@@ -338,7 +356,7 @@ a {
   align-items: center;
   padding-bottom: 50px;
 
-  background-color: #f5f7f9;
+  background-color: #f5f9f7;
 }
 
 .ubicacion h2 {
@@ -358,6 +376,21 @@ a {
   height: 600px;
   max-width: 100%;
   border: 0;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto .texto {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #2d6d5c;
 }
 
 form {
@@ -390,7 +423,7 @@ form {
   padding: 15px;
   margin-bottom: 20px;
   border: none;
-  background-color: #e0f9ff;
+  background-color: #e0eeea;
   border-radius: 20px;
   font-size: 14px;
   color: #666;
@@ -424,7 +457,7 @@ form {
 .btn-submit {
   width: 100%;
   padding: 15px;
-  background-color: #1f5561;
+  background-color: #2d6d5c;
   color: white;
   border: none;
   border-radius: 25px;
@@ -436,7 +469,7 @@ form {
 
 .btn-submit:hover {
   transform: translateY(-2px);
-  background-color: #174049;
+  background-color: #204239;
 }
 
 .opcional {
