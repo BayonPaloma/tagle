@@ -603,17 +603,6 @@ footer a {
   font-weight: 200;
 }
 
-@media (max-width: 992px) {
-  .contenedor-tarjetas {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-
-  .tarjeta {
-    max-width: 320px;
-  }
-}
-
 @media (max-width: 768px) {
   .hero {
     justify-content: center;
@@ -627,16 +616,62 @@ footer a {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .btn-hero {
     display: inline-block;
     padding: 12px 20px;
+  }
+
+  .tagle {
+    padding: 0px 32px;
+  }
+
+  .etapas-centro {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info-extra {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+
+  .continfo {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-extra img {
+    width: 100%;
+    height: 180px;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .textoinfo {
+    max-width: none;
+    width: 100%;
+  }
+
+  .textoinfo h4 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+
+  .textoinfo p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
   }
 
   .especialidades {
@@ -656,12 +691,6 @@ footer a {
   .subtitulo {
     font-size: 0.75rem;
     letter-spacing: 3px;
-  }
-
-  .contenedor-tarjetas {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    justify-items: center;
   }
 
   .tarjeta {
@@ -708,10 +737,6 @@ footer a {
 }
 
 @media (max-width: 576px) {
-  .contenedor-tarjetas {
-    grid-template-columns: 1fr;
-  }
-
   .tarjeta {
     width: 100%;
     max-width: 400px;
