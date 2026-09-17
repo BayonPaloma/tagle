@@ -559,10 +559,6 @@ form {
 
 footer {
   background-color: #2d6d5c;
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
 
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   color: white;
@@ -589,6 +585,10 @@ footer ul {
 
 footer li:hover {
   color: #052618;
+}
+
+footer a {
+  font-weight: 400;
 }
 
 .columna-logo {
