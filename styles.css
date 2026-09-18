@@ -724,6 +724,39 @@ footer a {
     margin: 0;
   }
 
+  .especialidades {
+    padding: 60px 5%;
+  }
+
+  .tema {
+    grid-template-columns: 1fr;
+  }
+
+  .tema-info {
+    padding: 25px;
+  }
+
+  .tema-info img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tema-contenido {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .tema-bloque {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8e5e0;
+  }
+
+  .tema-bloque:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
   .insta {
     padding: 40px 20px;
   }
