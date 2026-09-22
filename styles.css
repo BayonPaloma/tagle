@@ -747,6 +747,10 @@ footer a {
     padding: 30px;
   }
 
+  .tema-contenido.dos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .tema-bloque {
     padding-bottom: 20px;
     border-bottom: 1px solid #d8e5e0;
