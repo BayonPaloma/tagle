@@ -57,6 +57,117 @@ a {
   text-decoration: none;
 }
 
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+
+.nav-menu {
+  position: fixed;
+  z-index: 100;
+  user-select: none;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #2d6d5c;
+  padding-top: 80px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 100;
+}
+
+.nav-menu.active {
+  transform: translateX(0);
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.nav-menu a {
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: #6aa495;
+}
+
+.redes-menu {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.redes-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.redes-menu a:hover {
+  background-color: transparent;
+  color: #6aa495;
+}
+
 .hero {
   background-image:
     linear-gradient(rgba(215, 215, 215, 0.5), rgba(0, 0, 0, 0.5)),
