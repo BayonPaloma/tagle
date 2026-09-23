@@ -80,13 +80,13 @@ a {
 
 .menu-toggle {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 32px;
+  left: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 35px;
   background: transparent;
   border: none;
   cursor: pointer;
