@@ -28,6 +28,18 @@ menuLinks.forEach((link) => {
 menuOverlay.addEventListener("click", () => {
   closeMenu();
 });
+
+//faq
+function toggleFAQItem(id) {
+  const content = document.getElementById(`faq-content-${id}`);
+  const arrow = document.getElementById(`arrow-${id}`);
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+}
+
 // popup formulario
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".contacto form");
