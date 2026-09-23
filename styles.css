@@ -132,6 +132,14 @@ a {
   margin-bottom: 50px;
 }
 
+.tema-bloque li {
+  transition: transform 0.3s ease;
+}
+
+.tema-bloque li:hover {
+  transform: translateY(-2px);
+}
+
 .contenedor-especialidades {
   display: flex;
   flex-direction: column;
@@ -258,6 +266,11 @@ a {
   padding: 24px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.etapa:hover {
+  transform: translateY(-8px);
 }
 
 .etapa:nth-child(1) {
@@ -305,7 +318,13 @@ a {
   border-radius: 20px;
   white-space: nowrap;
   font-size: 12px;
+  transition: transform 0.2s ease;
 }
+
+.pill:hover {
+  transform: translateY(-2px);
+}
+
 .info-extra {
   display: flex;
   width: 100%;
@@ -323,6 +342,12 @@ a {
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.continfo:hover {
+  transform: translateY(-5px);
+  border-color: #2d6d5c;
 }
 
 .textoinfo {
