@@ -29,6 +29,37 @@ menuOverlay.addEventListener("click", () => {
   closeMenu();
 });
 
+// animacion
+document.addEventListener("DOMContentLoaded", () => {
+  const observerOptions = {
+    root: null,
+    threshold: 0.3,
+  };
+
+  const revealCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const revealObserver = new IntersectionObserver(
+    revealCallback,
+    observerOptions,
+  );
+
+  const elementsToAnimate = document.querySelectorAll(
+    ".texto, .cont-pills, .continfo, .tema-contenido, .insta h2, .ubicacion h2, .faq h2",
+  );
+
+  elementsToAnimate.forEach((el) => {
+    el.classList.add("reveal-hidden");
+    revealObserver.observe(el);
+  });
+});
+
 //faq
 function toggleFAQItem(id) {
   const content = document.getElementById(`faq-content-${id}`);

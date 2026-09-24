@@ -168,6 +168,20 @@ a {
   color: #6aa495;
 }
 
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition:
+    opacity 0.9s ease-out,
+    transform 0.9s ease-out;
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero {
   background-image:
     linear-gradient(rgba(215, 215, 215, 0.5), rgba(0, 0, 0, 0.5)),
