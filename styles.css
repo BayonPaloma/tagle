@@ -860,6 +860,32 @@ footer a {
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    top: 24px;
+    left: 20px;
+
+    padding: 12px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background: rgba(33, 84, 70, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .menu-toggle span {
+    width: 22px;
+    height: 2px;
+    border-radius: 10px;
+  }
+
   .hero {
     justify-content: center;
     text-align: center;
