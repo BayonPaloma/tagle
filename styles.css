@@ -861,11 +861,16 @@ footer a {
 
 @media (max-width: 768px) {
   .menu-toggle {
+    position: fixed;
     top: 24px;
     left: 20px;
 
-    padding: 12px;
+    width: 46px;
+    height: 46px;
+    padding: 0;
 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -878,12 +883,20 @@ footer a {
     border-radius: 8px;
 
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+
+    z-index: 101;
   }
 
   .menu-toggle span {
+    display: block;
     width: 22px;
     height: 2px;
+    flex-shrink: 0;
+
+    background-color: #ffffff;
     border-radius: 10px;
+
+    filter: none;
   }
 
   .hero {
