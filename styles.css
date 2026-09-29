@@ -1090,6 +1090,41 @@ footer a {
     padding-bottom: 0;
   }
 
+  .profesionales {
+    padding: 52px;
+  }
+
+  .profesionales h2 {
+    font-size: 1.5rem;
+  }
+
+  .contprof {
+    width: 100%;
+    display: block;
+  }
+
+  .prof-otorrino,
+  .prof-grupo {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profesionales h3 {
+    font-size: 1.1rem;
+  }
+
+  .lista-profesionales,
+  .prof-otorrino .lista-profesionales {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .lista-profesionales li {
+    font-size: 0.95rem;
+  }
+
   .insta {
     padding: 40px 20px;
   }
