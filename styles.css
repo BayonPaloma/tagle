@@ -984,6 +984,102 @@ footer a {
   }
 }
 
+/*
+@media (max-width: 1035px) {
+  .publicaciones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .hero h3 {
+    font-size: 1.7rem;
+  }
+  .tagle {
+    padding: 0 32px 60px;
+  }
+
+  .descripcion-centro p {
+    font-size: 20px;
+  }
+  .etapas-centro {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .etapa {
+    grid-column: span 2;
+  }
+
+  .etapa:nth-child(3) {
+    grid-column: 2 / span 2;
+  }
+  .especialidades {
+    padding: 60px 5%;
+  }
+  .tema {
+    grid-template-columns: 1fr;
+  }
+
+  .insta p {
+    max-width: 75%;
+  }
+
+  .publicaciones {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .instagram-card {
+    width: 100%;
+  }
+
+  .faq {
+    padding: 40px 32px;
+  }
+
+  .texto-foot {
+    max-width: 300px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .columna-logo img {
+    max-width: 90px;
+  }
+  .columna {
+    flex: 1;
+  }
+  .columna ul {
+    margin: 12px 0 0;
+  }
+
+  .contprof {
+    width: 100%;
+    max-width: 720px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 40px;
+  }
+
+  .prof-otorrino,
+  .prof-grupo {
+    padding-left: 0;
+  }
+
+  .prof-otorrino .lista-profesionales {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     position: fixed;
