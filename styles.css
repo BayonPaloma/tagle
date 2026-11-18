@@ -300,6 +300,7 @@ a {
 
 .img-alterna {
   position: relative;
+  object-fit: cover;
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
@@ -1026,6 +1027,16 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .tema-info img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .img-alterna {
+    width: 240px;
+    height: 240px;
+  }
+
   .insta p {
     max-width: 75%;
   }
@@ -1209,6 +1220,11 @@ footer a {
   }
 
   .tema-info img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .img-alterna {
     width: 240px;
     height: 240px;
   }
