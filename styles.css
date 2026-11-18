@@ -357,6 +357,9 @@ a {
 .tema-contenido.dos {
   grid-template-columns: repeat(2, 1fr);
 }
+.tema-toggle {
+  display: none;
+}
 
 .tema-bloque h4 {
   margin: 0 0 15px;
@@ -1201,6 +1204,8 @@ footer a {
 
   .tema-info {
     padding: 25px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .tema-info img {
@@ -1216,6 +1221,57 @@ footer a {
 
   .tema-contenido.dos {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tema-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+    padding: 0;
+    background: #215446;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .tema-toggle::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-top: -4px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    transition:
+      transform 0.3s ease,
+      margin 0.3s ease;
+  }
+
+  .tema.abierto .tema-toggle::before {
+    margin-top: 4px;
+    transform: rotate(-135deg);
+  }
+
+  .tema-contenido {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      max-height 0.5s ease,
+      padding 0.5s ease,
+      opacity 0.4s ease;
+  }
+
+  .tema.abierto .tema-contenido {
+    max-height: 1500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 1;
   }
 
   .tema-bloque {

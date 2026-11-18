@@ -60,6 +60,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Tarjetas de especialidades desplegables (solo mobile)
+document.querySelectorAll(".tema").forEach((tema) => {
+  const info = tema.querySelector(".tema-info");
+  const contenido = tema.querySelector(".tema-contenido");
+  if (!info || !contenido) return;
+
+  const boton = document.createElement("button");
+  boton.type = "button";
+  boton.className = "tema-toggle";
+  boton.setAttribute("aria-expanded", "false");
+  boton.setAttribute("aria-label", "Ver más información");
+  info.appendChild(boton);
+
+  info.addEventListener("click", () => {
+    const abierto = tema.classList.toggle("abierto");
+    boton.setAttribute("aria-expanded", abierto);
+  });
+});
+
 //faq
 function toggleFAQItem(id) {
   const content = document.getElementById(`faq-content-${id}`);
