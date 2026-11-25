@@ -51,13 +51,57 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   const elementsToAnimate = document.querySelectorAll(
-    ".texto, .cont-pills, .continfo, .tema-contenido, .insta h2, .ubicacion h2, .faq h2",
+    ".texto, .cont-pills, .continfo, .tema-contenido, .insta h2, .ubicacion h2, .faq h2, .sobre-nosotros h2, .sobre-nosotros p",
   );
 
   elementsToAnimate.forEach((el) => {
     el.classList.add("reveal-hidden");
     revealObserver.observe(el);
   });
+});
+
+// Sobre nosotos imagenes rotativass
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel");
+  if (!carousel) return;
+
+  const slides = carousel.querySelectorAll(".carousel__slide");
+  const prevBtn = carousel.querySelector(".carousel__btn--prev");
+  const nextBtn = carousel.querySelector(".carousel__btn--next");
+  const INTERVALO = 3000; // milisegundos entre fotos
+
+  let actual = 0;
+  let timer;
+
+  function mostrar(indice) {
+    slides[actual].classList.remove("is-active");
+    actual = (indice + slides.length) % slides.length;
+    slides[actual].classList.add("is-active");
+  }
+
+  function iniciar() {
+    detener();
+    timer = setInterval(() => mostrar(actual + 1), INTERVALO);
+  }
+
+  function detener() {
+    clearInterval(timer);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    mostrar(actual + 1);
+    iniciar();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    mostrar(actual - 1);
+    iniciar();
+  });
+
+  carousel.addEventListener("mouseenter", detener);
+  carousel.addEventListener("mouseleave", iniciar);
+
+  iniciar();
 });
 
 // Tarjetas de especialidades desplegables (solo mobile)
